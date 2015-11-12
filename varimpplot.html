@@ -1,0 +1,196 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/css/nv.d3.css'>
+    <link rel='stylesheet' href='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/css/rNVD3.css'>
+    
+    <script src='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/js/jquery-1.8.2.min.js' type='text/javascript'></script>
+    <script src='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/js/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart16bc2569461' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart16bc2569461()
+    });
+    function drawchart16bc2569461(){  
+      var opts = {
+ "dom": "chart16bc2569461",
+"width":    800,
+"height":    400,
+"x": "variable",
+"y": "MeanDecreaseGini",
+"type": "discreteBarChart",
+"id": "chart16bc2569461" 
+},
+        data = [
+ {
+ "MeanDecreaseGini": 166.8778224289,
+"variable": "STREAM_AL_MEAN",
+"RANK":              1 
+},
+{
+ "MeanDecreaseGini": 57.05885974404,
+"variable": "RUN_HL",
+"RANK":              2 
+},
+{
+ "MeanDecreaseGini": 56.98365532879,
+"variable": "STREAM_COL_RSD",
+"RANK":              3 
+},
+{
+ "MeanDecreaseGini": 48.95952137759,
+"variable": "FILTER_ID",
+"RANK":              4 
+},
+{
+ "MeanDecreaseGini": 45.19403067933,
+"variable": "SPIKE_FLOW_DIF",
+"RANK":              5 
+},
+{
+ "MeanDecreaseGini":  37.4919801388,
+"variable": "STREAM_AL_RSD",
+"RANK":              6 
+},
+{
+ "MeanDecreaseGini": 19.87812102381,
+"variable": "MAX_FLOW_CHANGE",
+"RANK":              7 
+},
+{
+ "MeanDecreaseGini": 19.29964861572,
+"variable": "AL_H20_MEAN",
+"RANK":              8 
+},
+{
+ "MeanDecreaseGini": 18.54055692852,
+"variable": "FLOW_RSD",
+"RANK":              9 
+},
+{
+ "MeanDecreaseGini": 17.58090532169,
+"variable": "STREAM_PH_RSD",
+"RANK":             10 
+},
+{
+ "MeanDecreaseGini": 17.16053524399,
+"variable": "PRE_COAG_PH_MEAN",
+"RANK":             11 
+},
+{
+ "MeanDecreaseGini": 16.82812345995,
+"variable": "STREAM_PH_MEAN",
+"RANK":             12 
+},
+{
+ "MeanDecreaseGini": 15.08370005357,
+"variable": "RAW_TURB_MEAN",
+"RANK":             13 
+},
+{
+ "MeanDecreaseGini": 15.05321926364,
+"variable": "RAW_COL_MEAN",
+"RANK":             14 
+},
+{
+ "MeanDecreaseGini": 13.86844861802,
+"variable": "PRE_COAG_PH_RSD",
+"RANK":             15 
+},
+{
+ "MeanDecreaseGini": 12.94532797005,
+"variable": "RAW_PH_RSD",
+"RANK":             16 
+},
+{
+ "MeanDecreaseGini": 12.77037386032,
+"variable": "POLY_DOSE_RSD",
+"RANK":             17 
+},
+{
+ "MeanDecreaseGini": 11.17217701532,
+"variable": "RAW_TURB_RSD",
+"RANK":             18 
+},
+{
+ "MeanDecreaseGini":  10.5836951333,
+"variable": "LIME_DOSE_RSD",
+"RANK":             19 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .margin({
+ "left":     90,
+"bottom":    200 
+})
+          
+        chart.xAxis
+  .rotateLabels(   -90)
+  .axisLabel("Variable")
+
+        
+        
+        chart.yAxis
+  .axisLabel("Score")
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

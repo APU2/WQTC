@@ -1,0 +1,344 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/css/nv.d3.css'>
+    <link rel='stylesheet' href='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/css/rNVD3.css'>
+    
+    <script src='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/js/jquery-1.8.2.min.js' type='text/javascript'></script>
+    <script src='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='C:/Program Files/R/R-3.2.0/library/rCharts/libraries/nvd3/js/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 650px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart16bc68335688' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart16bc68335688()
+    });
+    function drawchart16bc68335688(){  
+      var opts = {
+ "dom": "chart16bc68335688",
+"width":    650,
+"height":    400,
+"x": "FILTER_ID",
+"y": "V1",
+"group": "RUN_FAIL",
+"type": "multiBarChart",
+"id": "chart16bc68335688" 
+},
+        data = [
+ {
+ "FILTER_ID": "STREAM 1 FILTER 1",
+"RUN_FAIL": "PASS",
+"V1": 476 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 1",
+"RUN_FAIL": "FAIL",
+"V1": 28 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 2",
+"RUN_FAIL": "PASS",
+"V1": 479 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 2",
+"RUN_FAIL": "FAIL",
+"V1": 26 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 3",
+"RUN_FAIL": "FAIL",
+"V1": 52 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 3",
+"RUN_FAIL": "PASS",
+"V1": 453 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 4",
+"RUN_FAIL": "PASS",
+"V1": 460 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 4",
+"RUN_FAIL": "FAIL",
+"V1": 41 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 5",
+"RUN_FAIL": "PASS",
+"V1": 445 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 5",
+"RUN_FAIL": "FAIL",
+"V1": 25 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 6",
+"RUN_FAIL": "PASS",
+"V1": 480 
+},
+{
+ "FILTER_ID": "STREAM 1 FILTER 6",
+"RUN_FAIL": "FAIL",
+"V1": 23 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 1",
+"RUN_FAIL": "PASS",
+"V1": 478 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 1",
+"RUN_FAIL": "FAIL",
+"V1": 12 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 2",
+"RUN_FAIL": "PASS",
+"V1": 489 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 2",
+"RUN_FAIL": "FAIL",
+"V1": 10 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 3",
+"RUN_FAIL": "PASS",
+"V1": 486 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 3",
+"RUN_FAIL": "FAIL",
+"V1": 7 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 4",
+"RUN_FAIL": "PASS",
+"V1": 484 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 4",
+"RUN_FAIL": "FAIL",
+"V1": 14 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 5",
+"RUN_FAIL": "PASS",
+"V1": 485 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 5",
+"RUN_FAIL": "FAIL",
+"V1": 9 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 6",
+"RUN_FAIL": "PASS",
+"V1": 488 
+},
+{
+ "FILTER_ID": "STREAM 2 FILTER 6",
+"RUN_FAIL": "FAIL",
+"V1": 9 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 1",
+"RUN_FAIL": "PASS",
+"V1": 484 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 1",
+"RUN_FAIL": "FAIL",
+"V1": 21 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 2",
+"RUN_FAIL": "PASS",
+"V1": 476 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 2",
+"RUN_FAIL": "FAIL",
+"V1": 21 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 3",
+"RUN_FAIL": "PASS",
+"V1": 461 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 3",
+"RUN_FAIL": "FAIL",
+"V1": 34 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 4",
+"RUN_FAIL": "PASS",
+"V1": 479 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 4",
+"RUN_FAIL": "FAIL",
+"V1": 26 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 5",
+"RUN_FAIL": "PASS",
+"V1": 457 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 5",
+"RUN_FAIL": "FAIL",
+"V1": 50 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 6",
+"RUN_FAIL": "PASS",
+"V1": 471 
+},
+{
+ "FILTER_ID": "STREAM 3 FILTER 6",
+"RUN_FAIL": "FAIL",
+"V1": 22 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 1",
+"RUN_FAIL": "PASS",
+"V1": 480 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 1",
+"RUN_FAIL": "FAIL",
+"V1": 26 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 2",
+"RUN_FAIL": "FAIL",
+"V1": 32 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 2",
+"RUN_FAIL": "PASS",
+"V1": 473 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 3",
+"RUN_FAIL": "PASS",
+"V1": 458 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 3",
+"RUN_FAIL": "FAIL",
+"V1": 32 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 4",
+"RUN_FAIL": "PASS",
+"V1": 434 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 4",
+"RUN_FAIL": "FAIL",
+"V1": 52 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 5",
+"RUN_FAIL": "PASS",
+"V1": 478 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 5",
+"RUN_FAIL": "FAIL",
+"V1": 24 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 6",
+"RUN_FAIL": "PASS",
+"V1": 451 
+},
+{
+ "FILTER_ID": "STREAM 4 FILTER 6",
+"RUN_FAIL": "FAIL",
+"V1": 48 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .color([ "green", "red" ])
+  .reduceXTicks(false)
+  .margin({
+ "left":     90,
+"bottom":    160 
+})
+          
+        chart.xAxis
+  .rotateLabels(   -90)
+  .axisLabel("Filter")
+
+        
+        
+        chart.yAxis
+  .axisLabel("Count of filter runs")
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

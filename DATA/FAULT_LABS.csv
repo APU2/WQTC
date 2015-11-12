@@ -1,0 +1,13 @@
+VARIABLE,label,colour
+M_FLT_HY_LD,Hydraulic load.,lightblue
+MFLT_HY_SHK,Hydraulic shock.,darkblue
+M_FLT_WAS,Filter wash control.,olive
+M_FLT_COND,Filter condition.,orange
+M_COND_SP,Conditioning set point.,lightgreen
+M_COND_CTRL,Conditioning control.,darkgreen
+M_COAG_SP,Coagulant set point.,lightgrey
+M_COAG_CTRL,Coagulant control.,darkgrey
+M_FLOC_SP,Polymer set points.,crimson
+M_FLOC_CTRL,Polymer control.,pink
+M_RAW_LD,Raw load average.,yellow
+M_RAW_VAR,Raw load variablity.,gold

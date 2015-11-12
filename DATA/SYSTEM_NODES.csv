@@ -1,0 +1,15 @@
+nodes,label,type,color,shape,fontcolor,fontsize
+TOP,Expert filtration\nmanagement system,lower,Black,rectangle,Black,40
+PERF,Performance monitoring,lower,Black,rectangle,Black,40
+DIAG,Diagnostics,lower,Black,rectangle,Black,40
+HLPERF,High level\nperformance monitoring,lower,Black,rectangle,Black,40
+FAILURERATES,Comparitive \nperformance\nassessment,lower,Black,rectangle,Black,40
+TIMETAB,Visualisation of\nlong term\nperformance,lower,Black,rectangle,Black,40
+FAILTYPES,Communication\nof dominant\nfailure types,lower,Black,rectangle,Black,40
+TRENDS,Performance trends,lower,Black,rectangle,Black,40
+QCC,Cusum charts,lower,Black,rectangle,Black,40
+MLALG,Machine learning algorithms,lower,Black,rectangle,Black,40
+EXPALG,Variable importance\n interpretation,lower,Black,rectangle,Black,40
+DATEXP,Data exploration tools,lower,Black,rectangle,Black,40
+COMP DIST,Signal comparison,lower,Black,rectangle,Black,40
+TREES,Tree models,lower,Black,rectangle,Black,40
